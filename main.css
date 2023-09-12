@@ -10,7 +10,18 @@
   height: 14px;
 }
 
+header {
+  position: sticky;
+  top: 0px;
+}
+
+body {
+  position: sticky;
+  top: 0px;
+}
+
 #header {
+  background-color: white;
   display: flex;
   height: 80px;
   justify-content: space-between;
@@ -19,7 +30,8 @@
 }
 
 #logo {
-  margin-left: 20px;
+  position: static;
+  margin-left: -190px;
 }
 
 .sections {
@@ -115,6 +127,12 @@ nav ul li a span {
   margin-top: 40px;
 }
 
+.sidrubrik-left {
+display: flex;
+justify-content: left;
+margin-left: 40px;
+}
+
 .centered-text {
   display: flex;
   justify-content: center;
@@ -122,6 +140,20 @@ nav ul li a span {
   margin-right: 200px;
   margin-left: 200px;
 }
+
+.text-left {
+  margin: 20px 40px 20px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.text-left-vit {
+  margin: 200px 40px 20px;
+  color: white;
+  font-size: 12px;
+}
+
+
 
 footer {
   background-color: #2694cf;
@@ -160,6 +192,16 @@ footer {
   background-color: #1d1d1b;
 }
 
+#black-area-textil {
+  display: flex;
+  margin:-180px 0px 0px;
+  justify-content: center;
+  height: 500px;
+  background-color: #1d1d1b;
+}
+
+
+
 .white-text {
   position: absolute;
   font-size: 12px;
@@ -167,7 +209,7 @@ footer {
   color: white;
   text-align: center;
   margin-top: 50px;
-  font-weight: lighter;
+  font-weight: light;
 }
 
 .underrubrik-vit {
@@ -179,6 +221,22 @@ footer {
   color: white;
   text-align: center;
 }
+
+.småbilder {
+  max-width: 80%;
+  margin: 20px 40px 20px;
+}
+
+.gallery-item {
+  margin-bottom: 40px;
+}
+
+.gallery-item p {
+  margin-top: -30px;
+  margin-left: 40px;
+}
+
+
 
 @media (max-width: 770px) {
   .hamburger {
@@ -226,4 +284,11 @@ footer {
     margin-left: 20px;
     font-size: 12px;
   }
+
+  .hamburger-menu.hidden {
+    display: none;
+
+  }
+
+
 }
