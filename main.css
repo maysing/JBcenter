@@ -24,20 +24,26 @@ body {
   background-color: white;
   display: flex;
   height: 80px;
-  justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid rgb(195, 195, 195);
 }
 
+/* #logo {
+  margin-right: 800px;
+  margin-left: 20px;
+} */
+
+
 #logo {
-  position: static;
-  margin-left: -190px;
+margin-left: 20px;
 }
 
 .sections {
   display: flex;
   justify-content: space-between;
-  width: 400px;
+  align-items: right;
+  width: 300px;
+  margin-left: auto;
   margin-right: 40px;
 }
 
@@ -201,7 +207,6 @@ footer {
 }
 
 
-
 .white-text {
   position: absolute;
   font-size: 12px;
@@ -241,8 +246,9 @@ footer {
 @media (max-width: 770px) {
   .hamburger {
     display: block;
+    margin-left: auto;
     cursor: pointer;
-    margin-right: 40px;
+    margin-right: 35px;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -258,6 +264,8 @@ footer {
   .sections {
     display: none;
   }
+
+
 
   .hamburger-menu {
     position: fixed;
