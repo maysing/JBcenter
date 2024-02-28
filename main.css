@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Cormorant SC", serif;
   user-select: none;
 }
 
@@ -15,6 +16,31 @@ header {
   top: 0px;
 }
 
+.sub-sections {
+  list-style: none;
+  display: none;
+  position: absolute;
+  margin-top: 1.35em;
+}
+
+.sub-sections.show {
+  display: block;
+}
+
+.sub-sections li {
+    background-color: white;
+    line-height: 40px;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    padding-left: 2em;
+    padding-right: 4em;
+    font-size: 1rem;
+    margin-left: -1.5em;
+}
+
+.verksamhet-btn-header {
+  width: fit-content;
+}
+
 body {
   position: sticky;
   top: 0px;
@@ -26,25 +52,30 @@ body {
   height: 80px;
   align-items: center;
   border-bottom: 2px solid rgb(195, 195, 195);
+  z-index: 2;
 }
 
-/* #logo {
-  margin-right: 800px;
-  margin-left: 20px;
-} */
-
-
 #logo {
-margin-left: 20px;
+  margin-left: 20px;
+  font-size: 2.5rem;
+  color: #009fe3;
+  background-color: black;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .sections {
   display: flex;
   justify-content: space-between;
   align-items: right;
-  width: 300px;
+  width: 350px;
   margin-left: auto;
   margin-right: 40px;
+  font-size: 1.2rem;
+}
+
+.sections a {
+  text-decoration: none;
 }
 
 /* Hidden menu */
@@ -125,6 +156,7 @@ nav ul li a span {
 
 .top-image {
   max-width: 100%;
+  z-index: 1;
 }
 
 .sidrubrik {
@@ -134,9 +166,9 @@ nav ul li a span {
 }
 
 .sidrubrik-left {
-display: flex;
-justify-content: left;
-margin-left: 40px;
+  display: flex;
+  justify-content: left;
+  margin-left: 40px;
 }
 
 .centered-text {
@@ -159,10 +191,8 @@ margin-left: 40px;
   font-size: 12px;
 }
 
-
-
 footer {
-  background-color: #2694cf;
+  background-color: #009fe3;
   height: 200px;
 }
 
@@ -171,10 +201,13 @@ footer {
   justify-content: center;
 }
 
-.footer-logo {
-  position: absolute;
-  max-width: 30%;
+#footer-logo {
   margin-top: 140px;
+  font-size: 2rem;
+  color: #009fe3;
+  background-color: #1d1d1b;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .footer-info {
@@ -185,6 +218,15 @@ footer {
 .frontpage-pics {
   max-width: 100%;
   min-width: 100%;
+}
+
+.logo-section {
+  display: flex;
+  font-size: 10rem;
+  justify-content: center;
+  color: #009fe3;
+  background-color: #1d1d1b;
+  padding-bottom: 0.2em;
 }
 
 #images {
@@ -200,12 +242,11 @@ footer {
 
 #black-area-textil {
   display: flex;
-  margin:-180px 0px 0px;
+  margin: -180px 0px 0px;
   justify-content: center;
   height: 500px;
   background-color: #1d1d1b;
 }
-
 
 .white-text {
   position: absolute;
@@ -241,8 +282,6 @@ footer {
   margin-left: 40px;
 }
 
-
-
 @media (max-width: 770px) {
   .hamburger {
     display: block;
@@ -264,8 +303,6 @@ footer {
   .sections {
     display: none;
   }
-
-
 
   .hamburger-menu {
     position: fixed;
@@ -295,8 +332,5 @@ footer {
 
   .hamburger-menu.hidden {
     display: none;
-
   }
-
-
 }

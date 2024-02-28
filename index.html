@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -15,13 +21,29 @@
   <body>
     <header id="header">
       <header id="top"></header>
-      <a href="index.html"><img id="logo" src="JBCenterLogo.jpg" alt="" /></a>
+      <a href="index.html"><p id="logo">JB center</p></a>
 
       <div class="sections">
-        <a href="">Hem</a>
-        <a href="">Verksamhet</a>
-        <a href="">Om oss</a>
-        <a href="">Bildgalleri</a>
+        <a href="index.html">Hem</a>
+        <div>
+          <a class="verksamhet-btn-header" href="#">Verksamhet</a>
+          <ul class="sub-sections">
+            <li>
+              <a href="textiltryck.html">Textiltryck</a>
+            </li>
+            <li>
+              <a href="strängning.html">Strängning</a>
+            </li>
+            <li>
+              <a href="försäljning.html">Försäljning</a>
+            </li>
+            <li>
+              <a href="consulting.html">Consulting</a>
+            </li>
+          </ul>
+        </div>
+        <a href="about.html">Om oss</a>
+        <a href="galleri.html">Bildgalleri</a>
       </div>
 
       <div class="hamburger">
@@ -73,12 +95,11 @@
 
     <div id="images">
       <img class="frontpage-pics" src="pic1.jpg" alt="" />
-      <img class="frontpage-pics" src="JBCenterLogo.jpg" alt="" />
+      <p class="logo-section">JB center</p>
       <img class="frontpage-pics" src="pic2.jpg" alt="" />
     </div>
 
     <div class="black-area">
-        
       <p class="underrubrik-vit">
         TEXTILTRYCK - STRÄNGNING - FÖRSÄLJNING - CONSULTING
       </p>
@@ -95,7 +116,9 @@
   <footer>
     <div class="footer">
       <p class="footer-info">Information</p>
-      <img class="footer-logo" src="JBCenterLogo.jpg" alt="" />
+      <a href="index.html">
+        <p id="footer-logo">JB center</p>
+      </a>
     </div>
   </footer>
 </html>
