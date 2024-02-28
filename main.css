@@ -37,6 +37,11 @@ header {
     margin-left: -1.5em;
 }
 
+.sub-sections li:hover {
+  color: #009fe3;
+  background-color: rgb(248, 248, 248);
+}
+
 .verksamhet-btn-header {
   width: fit-content;
 }
