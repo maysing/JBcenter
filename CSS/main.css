@@ -320,7 +320,8 @@ footer {
     display: block;
     position: fixed;
     width: 100%;
-    left: 0;
+  
+    overflow: hidden;
   }
 
   .sidrubrik {
