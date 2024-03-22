@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,9 +20,10 @@
     <title>JB Center</title>
   </head>
   <body>
+    <header class="top"></header>
     <header id="header">
-      <header id="top"></header>
-      <a href="index.html"><p id="logo">JB center</p></a>
+      <div class="top"></div>
+      <a id="logo" href="index.html">JB center</a>
 
       <div class="sections">
         <a href="index.html">Hem</a>
@@ -30,9 +32,6 @@
           <ul class="sub-sections">
             <li>
               <a href="textiltryck.html">Textiltryck</a>
-            </li>
-            <li>
-              <a href="strängning.html">Strängning</a>
             </li>
             <li>
               <a href="försäljning.html">Försäljning</a>
@@ -67,9 +66,6 @@
               <a href="textiltryck.html">Textiltryck</a>
             </li>
             <li>
-              <a href="strängning.html">Strängning</a>
-            </li>
-            <li>
               <a href="försäljning.html">Försäljning</a>
             </li>
             <li>
@@ -82,43 +78,50 @@
       </ul>
     </nav>
 
-    <img class="top-image" src="IMG_3978.JPG" alt="" />
-    <h1 class="sidrubrik">JB CENTER</h1>
-    <p class="centered-text">
-      Lorem ipsum dolor sit amet consectetur. Eget vehicula pellentesque nam
-      congue tincidunt morbi faucibus aenean aliquam. Nam pharetra viverra id ut
-      tincidunt. Sed suspendisse tortor augue in cras lectus fusce a maecenas.
-      Dui erat lacus enim at. Viverra non cursus felis turpis.Amet id cum
-      sagittis scelerisque. Quis integer et quam mauris blandit mauris consequat
-      neque et
-    </p>
+    <div id="black-area"></div>
+  
+    <div class="top-grid">
+        <img class="top-image" src="Bilder/Jesper B.jpeg" alt="" />
+        <div class="intro-text">
+          <h2 class="sidrubrik">JB CENTER</h2>
+          <h3 id="intro-rubrik">
+            TEXTILTRYCK - FÖRSÄLJNING - CONSULTING
+          </h3>
+        <p>
+          JBcenter inriktar sig främst på profilkäder och textiltryck för företag, föreningar och privatpersoner.
+          Även möjlighet till consulting inom adminsitration och planering. <br><br>
+          
+          Kontakta oss gärna om frågor inom profilkläder, textiltryck eller consulting. <br><br>
+          <p id="namn">
+            Jesper Borgstedt <br>
+            Ägare JBcenter
+          </p>
+        </p>
+      </div>
+    </div>
 
     <div id="images">
-      <img class="frontpage-pics" src="pic1.jpg" alt="" />
-      <p class="logo-section">JB center</p>
-      <img class="frontpage-pics" src="pic2.jpg" alt="" />
+      <img class="frontpage-pics" src="Bilder/skylt.png" alt="" />
     </div>
-
-    <div class="black-area">
-      <p class="underrubrik-vit">
-        TEXTILTRYCK - STRÄNGNING - FÖRSÄLJNING - CONSULTING
-      </p>
-      <p class="white-text">
-        Lorem ipsum dolor sit amet consectetur. Eget vehicula pellentesque nam
-        congue tincidunt morbi faucibus aenean aliquam. Nam pharetra viverra id
-        ut tincidunt. Sed suspendisse tortor augue in cras lectus fusce a
-        maecenas.
-      </p>
-    </div>
-
     <script src="main.js"></script>
   </body>
   <footer>
     <div class="footer">
-      <p class="footer-info">Information</p>
-      <a href="index.html">
-        <p id="footer-logo">JB center</p>
-      </a>
+      <div class="footer-container">
+      
+      <p class="footer-info">
+        Kontakt :  <br>
+        Telefon :  0703 309 706 <br>
+        E-post :  jbcenter@telia.com <br><br>
+        
+        Postadress : <br>
+        Tord-Skyttegatan 20 <br>
+        461 39 Trollhättan</p>
+        <a href="index.html">
+          <p id="footer-logo">JB center</p>
+        </a>
     </div>
+    
+  </div>
   </footer>
 </html>
