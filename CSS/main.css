@@ -246,13 +246,6 @@ footer {
   margin-top: 50px;
 }
 
-.black-area {
-  display: flex;
-  justify-content: center;
-  height: 200px;
-  background-color: #1d1d1b;
-}
-
 #black-area-textil {
   display: flex;
   margin: -180px 0px 0px;

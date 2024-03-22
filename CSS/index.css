@@ -27,7 +27,6 @@
     margin-bottom: 10%;
     font-size: 7rem;
     margin-left: -1em;
-    
   }
   
   #namn {
@@ -42,4 +41,33 @@
   .top-image {
     width: 70%;
     margin-top: 2em;
+  }
+
+
+  @media (max-width: 770px){
+    .top-grid {
+        display: block;
+        justify-content: center;
+    }
+
+    .top-image {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #black-area {
+        display: none;
+    }
+
+    .intro-text {
+        margin-left: 12%;
+        margin-bottom: 1em;
+        font-size: 1.1rem;
+      }
+
+      .sidrubrik {
+        font-size: 7rem;
+        margin-bottom: 0;
+        margin-right: -0.5em;
+      }
   }
