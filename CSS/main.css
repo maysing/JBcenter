@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   user-select: none;
+  overflow: hidden;
 }
 
 p {
@@ -320,7 +321,7 @@ footer {
     display: block;
     position: fixed;
     width: 100%;
-  
+    left: 0;
     overflow: hidden;
   }
 
