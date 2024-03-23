@@ -1,81 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/main.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <title>Försäljning</title>
-  </head>
-  <body>
-    <header id="header">
-      <header id="top"></header>
-      <a href="index.html"><p id="logo">JB center</p></a>
-
-      <div class="sections">
-        <a href="index.html">Hem</a>
-        <div>
-          <a class="verksamhet-btn-header" href="#">Verksamhet</a>
-          <ul class="sub-sections">
-            <li>
-              <a href="textiltryck.html">Textiltryck</a>
-            </li>
-            <li>
-              <a href="strängning.html">Strängning</a>
-            </li>
-            <li>
-              <a href="försäljning.html">Försäljning</a>
-            </li>
-            <li>
-              <a href="consulting.html">Consulting</a>
-            </li>
-          </ul>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="CSS/main.css" />
+      <link rel="stylesheet" href="CSS/about.css" />
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <title>Försäljning</title>
+    </head>
+    <body>
+      <header class="top"></header>
+      <header id="header">
+        <a id="logo" href="index.html">JB center</a>
+        <div class="sections">
+          <a href="index.html">Hem</a>
+          <a href="textiltryck.html">Textiltryck</a>
+          <a href="försäljning.html">Försäljning</a>
+          <a href="consulting.html">Consulting</a>
+          <a href="about.html">Om oss</a>
+          <a href="galleri.html">Bildgalleri</a>
         </div>
-        <a href="about.html">Om oss</a>
-        <a href="galleri.html">Bildgalleri</a>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </header>
+      <nav class="hamburger-menu">
+        <ul>
+          <li>
+            <a href="#">Hem</a>
+          </li>
+          <li>
+            <a href="#" class="verk-btn"
+              >Verksamhet
+              <span class="fa fa-caret-down first"></span>
+            </a>
+            <ul class="verk-show">
+              <li>
+                <a href="textiltryck.html">Textiltryck</a>
+              </li>
+              <li>
+                <a href="försäljning.html">Försäljning</a>
+              </li>
+              <li>
+                <a href="consulting.html">Consulting</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="about.html">Om oss</a></li>
+          <li><a href="galleri.html">Bildgalleri</a></li>
+        </ul>
+      </nav>
+      <div class="top-grid">
+        <div class="left-grid-area">
+          <h1 class="sidrubrik-left">Försäljning</h1>
+          <p class="text-left">
+            JBcenter erbjuder förutom textiltryck även möjligheten till en helhetslösning med stort sortiment av profilkläder. Vi har jackor, collegetröjor, hoodies, t-shirts, arbetskläder, mm. 
+            Fråga oss gärna så ska ni få ett förslag på det ni har som behov. <br />
+          </p>
+          <p class="namn">
+            Jesper Borgstedt, <br />
+            Ägare JBcenter
+          </p>
+        </div>
+        <div class="right-grid-area">
+          <img id="about-bild" src="Bilder/skylt.png" alt="" />
+        </div>
       </div>
 
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </header>
-    <nav class="hamburger-menu">
-      <ul>
-        <li>
-          <a href="#">Hem</a>
-        </li>
-        <li>
-          <a href="#" class="verk-btn"
-            >Verksamhet
-            <span class="fa fa-caret-down first"></span>
+      <script src="main.js"></script>
+    </body>
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <p class="footer-info">
+            Kontakt : <br />
+            Telefon : 0703 309 706 <br />
+            E-post : jbcenter@telia.com <br /><br />
+
+            Postadress : <br />
+            Tord-Skyttegatan 20 <br />
+            461 39 Trollhättan
+          </p>
+          <a href="index.html">
+            <p id="footer-logo">JB center</p>
           </a>
-          <ul class="verk-show">
-            <li>
-              <a href="textiltryck.html">Textiltryck</a>
-            </li>
-            <li>
-              <a href="strängning.html">Strängning</a>
-            </li>
-            <li>
-              <a href="försäljning.html">Försäljning</a>
-            </li>
-            <li>
-              <a href="consulting.html">Consulting</a>
-            </li>
-          </ul>
-        </li>
-        <li><a href="about.html">Om oss</a></li>
-        <li><a href="galleri.html">Bildgalleri</a></li>
-      </ul>
-    </nav>
-    <h1>Försäljning</h1>
-    <script src="main.js"></script>
-  </body>
+        </div>
+      </div>
+    </footer>
+  </head>
 </html>

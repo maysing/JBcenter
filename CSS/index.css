@@ -6,13 +6,6 @@
   margin-bottom: -20%;
 }
 
-.top-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  justify-items: center;
-}
-
 .intro-text {
   width: 80%;
   margin-top: 10%;
@@ -39,9 +32,6 @@
   font-weight: bold;
 }
 
-.namn {
-  font-style: italic;
-}
 
 .top-image {
   width: 70%;
