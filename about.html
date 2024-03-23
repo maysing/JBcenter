@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/about.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link
@@ -13,33 +14,17 @@
     <title>Om oss</title>
   </head>
   <body>
+    <header class="top"></header>
     <header id="header">
-      <header id="top"></header>
-      <a href="index.html"><p id="logo">JB center</p></a>
-
+      <a id="logo" href="index.html">JB center</a>
       <div class="sections">
         <a href="index.html">Hem</a>
-        <div>
-          <a class="verksamhet-btn-header" href="#">Verksamhet</a>
-          <ul class="sub-sections">
-            <li>
-              <a href="textiltryck.html">Textiltryck</a>
-            </li>
-            <li>
-              <a href="strängning.html">Strängning</a>
-            </li>
-            <li>
-              <a href="försäljning.html">Försäljning</a>
-            </li>
-            <li>
-              <a href="consulting.html">Consulting</a>
-            </li>
-          </ul>
-        </div>
+        <a href="textiltryck.html">Textiltryck</a>
+        <a href="försäljning.html">Försäljning</a>
+        <a href="consulting.html">Consulting</a>
         <a href="about.html">Om oss</a>
         <a href="galleri.html">Bildgalleri</a>
       </div>
-
       <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -61,9 +46,6 @@
               <a href="textiltryck.html">Textiltryck</a>
             </li>
             <li>
-              <a href="strängning.html">Strängning</a>
-            </li>
-            <li>
               <a href="försäljning.html">Försäljning</a>
             </li>
             <li>
@@ -75,25 +57,47 @@
         <li><a href="galleri.html">Bildgalleri</a></li>
       </ul>
     </nav>
-
-    <h1 class="sidrubrik-left">Om oss</h1>
-    <p class="text-left">
-      Lorem ipsum dolor sit amet consectetur. Eget vehicula pellentesque nam
-      congue tincidunt morbi faucibus aenean aliquam. Nam pharetra viverra id ut
-      tincidunt. Sed suspendisse tortor augue in cras lectus fusce a maecenas.
-      Dui erat lacus enim at. Viverra non cursus felis turpis.Amet id cum
-      sagittis scelerisque. Quis integer et quam mauris blandit mauris consequat
-      neque et.
-    </p>
-
-    <img class="småbilder" src="20230904-IMG_7978.jpg" alt="">
+    <div class="top-grid">
+      <div class="left-grid-area">
+        <h1 class="sidrubrik-left">Om oss</h1>
+        <p class="text-left">
+          JBcenter bildades under 2022 och initialt inriktat sig på textiltryck
+          för företag, föreningar och privatpersoner. Nu även utökat till
+          erbjuda profikläder, med eller utan textiltryck, samt även consulting
+          inom adminsitration och planering. Verksamheten bedrivs från såväl
+          Uppsala som Trollhättan, men har hela Sverige öppet för kunder. Jag är
+          en 23-årig kille som parallellt med mitt företag spelar badminton på
+          förbundets nationella center i Uppsala. Kontakta oss gärna om frågor
+          inom textiltryck, profilkläder eller consulting. <br />
+        </p>
+        <p class="namn">
+          Jesper Borgstedt, <br />
+          Ägare JBcenter
+        </p>
+      </div>
+      <div class="right-grid-area">
+        <img id="about-bild" src="Bilder/skylt.png" alt="" />
+      </div>
+    </div>
 
     <script src="main.js"></script>
   </body>
   <footer>
     <div class="footer">
-      <p class="footer-info">Information</p>
-      <img class="footer-logo" src="JBCenterLogo.jpg" alt="" />
+      <div class="footer-container">
+        <p class="footer-info">
+          Kontakt : <br />
+          Telefon : 0703 309 706 <br />
+          E-post : jbcenter@telia.com <br /><br />
+
+          Postadress : <br />
+          Tord-Skyttegatan 20 <br />
+          461 39 Trollhättan
+        </p>
+        <a href="index.html">
+          <p id="footer-logo">JB center</p>
+        </a>
+      </div>
     </div>
   </footer>
 </html>

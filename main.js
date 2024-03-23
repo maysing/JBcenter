@@ -14,9 +14,9 @@ verkButton.addEventListener("click", () => {
   nav.classList.toggle("show");
 });
 
-verkBtnHeader.addEventListener("click", () => {
+/* verkBtnHeader.addEventListener("click", () => {
   verkSubSections.classList.toggle("show");
-});
+}); */
 
 document.addEventListener("click", function (event) {
   if (!hamMenu.contains(event.target) && !hamburger.contains(event.target)) {

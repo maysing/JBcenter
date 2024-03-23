@@ -171,6 +171,10 @@ nav ul li a span {
   margin-top: 40em;
 }
 
+.namn {
+  font-style: italic;
+}
+
 .sidrubrik {
   display: flex;
   justify-content: center;
@@ -191,11 +195,6 @@ nav ul li a span {
   margin-left: 200px;
 }
 
-.text-left {
-  margin: 20px 40px 20px;
-  margin-top: 10px;
-  font-size: 12px;
-}
 
 .text-left-vit {
   margin: 200px 40px 20px;
@@ -243,8 +242,16 @@ footer {
   padding-bottom: 0.2em;
 }
 
-#images {
+.images {
   margin-top: 50px;
+  width: 100%;
+}
+
+.top-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: center;
 }
 
 #black-area-textil {
