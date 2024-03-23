@@ -1,73 +1,120 @@
 #black-area {
-    background-color: black;
-    width: 100%;
-    height: 24em;
-    z-index: 1;
-    margin-bottom: -20%;
+  background-color: black;
+  width: 100%;
+  height: 24em;
+  z-index: 1;
+  margin-bottom: -20%;
+}
+
+.top-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: center;
+}
+
+.intro-text {
+  width: 80%;
+  margin-top: 10%;
+  justify-content: center;
+}
+
+.sidrubrik {
+  font-family: "Cormorant SC", serif;
+  font-size: 3rem;
+  color: #009fe3;
+  margin-bottom: 10%;
+  font-size: 7rem;
+  position: absolute;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#text-container {
+    margin-top: 40%;
+}
+
+#intro-rubrik {
+  font-family: "Cormorant SC", serif;
+  font-weight: bold;
+}
+
+#namn {
+  font-style: italic;
+}
+
+
+
+.top-image {
+  width: 70%;
+  margin-top: 2em;
+  padding: 0;
+}
+
+@media (max-width: 770px) {
+  .top-grid {
+    display: block;
+    justify-content: center;
+    
   }
 
-  .top-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    justify-items: center;
+  .top-image {
+    width: 100%;
+    margin-top: 0;
   }
-  
+
+  #black-area {
+    display: none;
+  }
+
   .intro-text {
-    width: 80%;
-    margin-top: 10%;
-    margin-right: 4em;
-    justify-content: center;
+    margin-left: 12%;
+    margin-bottom: 1em;
+    font-size: 1.1rem;
+    margin-top: 0;
   }
-  
+
   .sidrubrik {
     font-family: "Cormorant SC", serif;
-    font-size: 3rem;
+    font-size: 3.3rem;
     color: #009fe3;
-    margin-bottom: 10%;
-    font-size: 7rem;
+    margin-bottom: 0;
     margin-left: -1em;
   }
-  
-  #namn {
-    font-style:italic;
-  }
-  
+
   #intro-rubrik {
     font-family: "Cormorant SC", serif;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    width: 30em;
+    margin-top: -0.5;
   }
-  
-  .top-image {
-    width: 70%;
-    margin-top: 2em;
-  }
+}
 
+@media (max-width: 1470px) {
+    .sidrubrik {
+        font-size: 5rem;
+        margin-bottom: 20%;
+        margin-right: 140px;
+      } 
 
-  @media (max-width: 770px){
-    .top-grid {
-        display: block;
-        justify-content: center;
+    #intro-rubrik {
+        font-size: 1.5rem;
     }
+}
 
-    .top-image {
-        width: 100%;
-        margin-top: 0;
+
+@media (max-width: 1070px) {
+    .sidrubrik {
+        font-family: "Cormorant SC", serif;
+        color: #009fe3;
+        margin-bottom: 30%;
+        font-size: 3rem;
+      } 
+
+      #intro-rubrik {
+        font-size: 1.2rem;
     }
+}
 
-    #black-area {
-        display: none;
-    }
 
-    .intro-text {
-        margin-left: 12%;
-        margin-bottom: 1em;
-        font-size: 1.1rem;
-      }
-
-      .sidrubrik {
-        font-size: 7rem;
-        margin-bottom: 0;
-        margin-right: -0.5em;
-      }
-  }
