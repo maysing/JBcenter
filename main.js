@@ -2,9 +2,10 @@ const hamburger = document.querySelector(".hamburger");
 const verkButton = document.querySelector(".verk-btn");
 const nav = document.querySelector("nav ul .verk-show");
 const hamMenu = document.querySelector(".hamburger-menu");
-const verkBtnHeader = document.querySelector(".verksamhet-btn-header");
-const verkSubSections = document.querySelector(".sub-sections");
-const galleriBilder = document.querySelector(".småbilder");
+const galleryImages = document.querySelectorAll(".småbilder");
+const popupImage = document.querySelector(".popup-image");
+const popUp = document.querySelector(".popup");
+const closeX = document.querySelector(".close");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
@@ -29,4 +30,14 @@ document.addEventListener("touchstart", function (event) {
   }
 });
 
+galleryImages.forEach((image) => {
+  image.addEventListener("click", () => {
+    const clickedImageSrc = image.src;
+    popupImage.src = clickedImageSrc;
+    popUp.classList.toggle("show");
+  });
+});
 
+closeX.addEventListener("click", () => {
+  popUp.classList.remove("show");
+});

@@ -10,6 +10,7 @@ p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 .top {
   background-color: black;
   height: 14px;
@@ -87,6 +88,11 @@ body {
 
 .sections a {
   text-decoration: none;
+}
+
+
+.sections :hover {
+  color: #009fe3;
 }
 
 /* Hidden menu */
@@ -167,6 +173,10 @@ nav ul li a span {
 
 /* General */
 
+.active {
+  color: #009fe3;
+}
+
 #intro {
   margin-top: 40em;
 }
@@ -183,7 +193,7 @@ nav ul li a span {
 
 .sidrubrik-left {
   font-family: "Cormorant SC", serif;
-  font-weight: bold
+  font-weight: bold;
   display: flex;
   justify-content: left;
   margin-left: 40px;
