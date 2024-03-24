@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/main.css" />
-    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/galleri.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,33 +20,17 @@
     <title>Bildgalleri</title>
   </head>
   <body>
+    <header class="top"></header>
     <header id="header">
-      <header id="top"></header>
-      <a href="index.html"><p id="logo">JB center</p></a>
-
+      <a id="logo" href="index.html">JB center</a>
       <div class="sections">
         <a href="index.html">Hem</a>
-        <div>
-          <a class="verksamhet-btn-header" href="#">Verksamhet</a>
-          <ul class="sub-sections">
-            <li>
-              <a href="textiltryck.html">Textiltryck</a>
-            </li>
-            <li>
-              <a href="strängning.html">Strängning</a>
-            </li>
-            <li>
-              <a href="försäljning.html">Försäljning</a>
-            </li>
-            <li>
-              <a href="consulting.html">Consulting</a>
-            </li>
-          </ul>
-        </div>
+        <a href="textiltryck.html">Textiltryck</a>
+        <a href="försäljning.html">Försäljning</a>
+        <a href="consulting.html">Consulting</a>
         <a href="about.html">Om oss</a>
         <a href="galleri.html">Bildgalleri</a>
       </div>
-
       <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -68,9 +52,6 @@
               <a href="textiltryck.html">Textiltryck</a>
             </li>
             <li>
-              <a href="strängning.html">Strängning</a>
-            </li>
-            <li>
               <a href="försäljning.html">Försäljning</a>
             </li>
             <li>
@@ -84,33 +65,32 @@
     </nav>
 
     <h1 class="sidrubrik-left">Bildgalleri</h1>
-    <p class="text-left">
-      Lorem ipsum dolor sit amet consectetur. Eget vehicula pellentesque nam
-      congue tincidunt morbi faucibus aenean aliquam. Nam pharetra viverra id ut
-      tincidunt.
-    </p>
 
-    <div class="gallery-item">
-      <img class="småbilder" src="IMG_3978.JPG" alt="" />
-      <p>Beskrivning här!</p>
-    </div>
-
-    <div class="gallery-item">
-      <img class="småbilder" src="20230904-IMG_7978.jpg" alt="" />
-      <p>Beskrivning här!</p>
-    </div>
-
-    <div class="gallery-item">
-      <img class="småbilder" src="20230904-IMG_7978.jpg" alt="" />
-      <p>Beskrivning här!</p>
+    <div id="galleri-grid">
+      <img class="småbilder" src="Bilder/TBF SM-tröjor 2024.jpeg" alt="" />
+      <img class="småbilder" src="Bilder/VBF tröjor 2023.jpeg" alt="" />
+      <img id="VEKAB" class="småbilder" src="Bilder/VEKAB 2023.jpeg" alt="" />
+      <img class="småbilder" src="Bilder/TBF SM Guld 2023.jpeg" alt="" />
     </div>
 
     <script src="main.js"></script>
   </body>
   <footer>
     <div class="footer">
-      <p class="footer-info">Information</p>
-      <img class="footer-logo" src="JBCenterLogo.jpg" alt="" />
+      <div class="footer-container">
+        <p class="footer-info">
+          Kontakt : <br />
+          Telefon : 0703 309 706 <br />
+          E-post : jbcenter@telia.com <br /><br />
+
+          Postadress : <br />
+          Tord-Skyttegatan 20 <br />
+          461 39 Trollhättan
+        </p>
+        <a href="index.html">
+          <p id="footer-logo">JB center</p>
+        </a>
+      </div>
     </div>
   </footer>
 </html>

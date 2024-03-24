@@ -1,0 +1,14 @@
+#galleri-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2;
+    row-gap: 2em;
+
+    justify-content: center;
+    justify-items: center;
+}
+
+
+#VEKAB {
+    height: 67%;
+}
