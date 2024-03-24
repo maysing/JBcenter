@@ -5,6 +5,12 @@
     z-index: 1;
     margin-bottom: -20%;
   }
+
+
+  #text-container h3 {
+    font-family: "Cormorant SC", serif;
+    font-weight: bold;
+  }
   
   .intro-text {
     width: 80%;

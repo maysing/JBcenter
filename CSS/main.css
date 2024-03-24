@@ -182,6 +182,8 @@ nav ul li a span {
 }
 
 .sidrubrik-left {
+  font-family: "Cormorant SC", serif;
+  font-weight: bold
   display: flex;
   justify-content: left;
   margin-left: 40px;
@@ -261,6 +263,7 @@ footer {
   height: 500px;
   background-color: #1d1d1b;
 }
+
 
 .white-text {
   position: absolute;

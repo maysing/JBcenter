@@ -4,6 +4,7 @@ const nav = document.querySelector("nav ul .verk-show");
 const hamMenu = document.querySelector(".hamburger-menu");
 const verkBtnHeader = document.querySelector(".verksamhet-btn-header");
 const verkSubSections = document.querySelector(".sub-sections");
+const galleriBilder = document.querySelector(".småbilder");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
@@ -27,3 +28,5 @@ document.addEventListener("touchstart", function (event) {
     hamburger.classList.remove("active");
   }
 });
+
+
