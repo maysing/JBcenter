@@ -49,38 +49,61 @@
     margin-left: 2em;
   }
 
+  #image-container {
+    margin-top: 4.6em;
+  }
+
+
+
+ 
+
 footer {
     margin-top: 10em;
 }
   
   @media (max-width: 1470px) {
-    #intro-rubrik {
-      font-size: 1.5rem;
-    }
+
   }
   
   @media (max-width: 1070px) {
     .sidrubrik {
-      font-family: "Cormorant SC", serif;
-      color: #009fe3;
       margin-bottom: 30%;
+      margin-left: 1.7em;
       font-size: 3rem;
     }
-  
-    #intro-rubrik {
-      font-size: 1.2rem;
+
+    .top-image {
+        margin-top: 8em;
     }
+
+    #black-area {
+        height: 200px;
+    }
+
+    #text-container h3 {
+        display: none;
+    }
+  
   }
   
   @media (max-width: 770px) {
     .top-grid {
       display: block;
-      justify-content: center;
     }
   
     .top-image {
-      width: 100%;
-      margin-top: 0;
+      width: 80%;
+    }
+
+    #black-area-bottom {
+        background-color: black;
+        height: 400px;
+        margin-top: -180px;
+    }
+    
+
+    #image-container {
+       margin-left: 8%;
     }
   
     #black-area {
@@ -88,23 +111,41 @@ footer {
     }
   
     .intro-text {
-      margin-left: 12%;
       margin-bottom: 1em;
       font-size: 1.1rem;
-      margin-top: 0;
+      margin-top: -6em;
+      margin-left: -1.8em;
+      width: 95%;
+      margin-bottom: 0;
+      padding: 0;
+    }
+
+    #bildtext {
+        color: white;
+        margin-left: 2.2em;
+    }
+
+    footer {
+        margin-top: -50px;
     }
   
     .sidrubrik {
-      font-family: "Cormorant SC", serif;
-      font-size: 3.3rem;
-      color: #009fe3;
+        display: none;
     }
-  
-    #intro-rubrik {
-      font-family: "Cormorant SC", serif;
-      font-weight: bolder;
-      font-size: 1.2rem;
-      margin-top: -0.5;
+
+    #text-container {
+        margin-top: -4em;
+        margin-left: 7.2em;
+    }
+
+    #text-container h3 {
+        display: block;
+        font-family: "Cormorant SC", serfif;
+        font-weight: bold;
+    }
+
+    #image-container {
+        margin-top: -4em;
     }
   
     #text-container {
@@ -113,16 +154,25 @@ footer {
   }
   
   @media (max-width: 500px) {
-      #intro-rubrik {
-          font-size: 0.9rem;
-          padding-top: 30px;
+
+        #image-container {
+            margin-left: 5%;
+            margin-top: -4em;
+         }
+
+         #text-container {
+            margin-left: 5em;
         }
   }
   
-  @media (max-width: 360px) {
-      #intro-rubrik {
-          font-size: 0.8rem;
-          padding-top: 40px;
-        }
+  @media (max-width: 400px) {
+
+        #image-container {
+            margin-left: 2%;
+         }
+
+         #text-container {
+            margin-top: 8em;
+         }
   }
   
