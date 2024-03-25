@@ -32,12 +32,22 @@
   font-weight: bold;
 }
 
-
 .top-image {
   width: 70%;
   margin-top: 2em;
   padding: 0;
 }
+
+.images {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.frontpage-pics {
+    max-width: 50%;
+    min-width: 50%;
+  }
 
 @media (max-width: 1470px) {
   #intro-rubrik {
@@ -51,6 +61,11 @@
     color: #009fe3;
     margin-bottom: 30%;
     font-size: 3rem;
+  }
+  .frontpage-pics {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0;
   }
 
   #intro-rubrik {

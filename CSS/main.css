@@ -4,6 +4,7 @@
   box-sizing: border-box;
   user-select: none;
   overflow-x: hidden;
+  
 }
 
 p {
@@ -230,9 +231,9 @@ footer {
 #footer-logo {
   font-size: 2rem;
   font-family: "Cormorant SC", serif;
+  text-align: center;
   color: #009fe3;
   background-color: #000000;
-  padding-left: 0.5em;
   margin-top: 0.5em;
 }
 

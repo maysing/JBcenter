@@ -44,6 +44,10 @@
     #about-bild {
       margin-left: 3.7em;
     }
+
+    .sidrubrik-left {
+        font-size: 1.5rem;
+    }
   }
   
   @media (max-width: 500px) {
