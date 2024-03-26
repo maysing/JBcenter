@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
+  user-select: text;
   overflow-x: hidden;
   
 }
@@ -239,11 +239,6 @@ footer {
 
 .footer-info {
   margin-top: 50px;
-}
-
-.frontpage-pics {
-  max-width: 100%;
-  min-width: 100%;
 }
 
 .logo-section {

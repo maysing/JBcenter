@@ -30,14 +30,14 @@ document.addEventListener("touchstart", function (event) {
   }
 });
 
-galleryImages.forEach((image) => {
-  image.addEventListener("click", () => {
-    const clickedImageSrc = image.src;
-    popupImage.src = clickedImageSrc;
-    popUp.classList.toggle("show");
-  });
-});
+// galleryImages.forEach((image) => {
+//   image.addEventListener("click", () => {
+//     const clickedImageSrc = image.src;
+//     popupImage.src = clickedImageSrc;
+//     popUp.classList.toggle("show");
+//   });
+// });
 
-closeX.addEventListener("click", () => {
-  popUp.classList.remove("show");
-});
+// closeX.addEventListener("click", () => {
+//   popUp.classList.remove("show");
+// });

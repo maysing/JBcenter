@@ -101,5 +101,14 @@ border-radius: 20px;
           opacity: 1;
         }
       }
+      
+      #galleri-grid {
+        display: block;
+    }
+
+    .småbilder {
+        margin-bottom: 3em;
+    }
+     
 }
 
