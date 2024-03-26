@@ -328,14 +328,14 @@ footer {
   }
 
   .hamburger-menu {
-    position: fixed;
+    position: absolute;
     width: 100%;
     left: 0;
   }
 
   .hamburger-menu.active {
     display: block;
-    position: fixed;
+    position: absolute;
     width: 100%;
     left: 0;
     overflow: hidden;
