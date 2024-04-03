@@ -1,61 +1,45 @@
+/* general */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   user-select: text;
   overflow-x: hidden;
-  
 }
 
 p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 .top {
   background-color: black;
   height: 14px;
 }
 
-header {
-  position: sticky;
-  top: 0px;
-}
-
-.sub-sections {
-  list-style: none;
-  display: none;
-  position: absolute;
-  margin-top: 1.35em;
-}
-
-.sub-sections.show {
-  display: block;
-}
-
-.sub-sections li {
-  background-color: white;
-  line-height: 40px;
-  border-bottom: 1px solid rgb(195, 195, 195);
-  padding-left: 2em;
-  padding-right: 4em;
-  font-size: 1rem;
-  margin-left: -1.5em;
-}
-
-.sub-sections li:hover {
+.active {
   color: #009fe3;
-  background-color: rgb(248, 248, 248);
 }
 
-.verksamhet-btn-header {
-  width: fit-content;
+.namn {
+  font-style: italic;
 }
 
-body {
-  position: sticky;
-  top: 0px;
+.sidrubrik {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
+
+.sidrubrik-left {
+  font-family: "Cormorant SC", serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: left;
+  margin-left: 80px;
+}
+
+/* header*/
 
 #header {
   background-color: white;
@@ -90,7 +74,6 @@ body {
 .sections a {
   text-decoration: none;
 }
-
 
 .sections :hover {
   color: #009fe3;
@@ -170,50 +153,10 @@ nav ul li a span {
 
 .hamburger-menu {
   display: none;
+  z-index: 9999;
 }
 
-/* General */
-
-.active {
-  color: #009fe3;
-}
-
-#intro {
-  margin-top: 40em;
-}
-
-.namn {
-  font-style: italic;
-}
-
-.sidrubrik {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-.sidrubrik-left {
-  font-family: "Cormorant SC", serif;
-  font-weight: bold;
-  display: flex;
-  justify-content: left;
-  margin-left: 40px;
-}
-
-.centered-text {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-right: 200px;
-  margin-left: 200px;
-}
-
-
-.text-left-vit {
-  margin: 200px 40px 20px;
-  color: white;
-  font-size: 12px;
-}
+/* Footer */
 
 footer {
   background-color: #009fe3;
@@ -241,20 +184,6 @@ footer {
   margin-top: 50px;
 }
 
-.logo-section {
-  display: flex;
-  font-size: 10rem;
-  justify-content: center;
-  color: #009fe3;
-  background-color: #1d1d1b;
-  padding-bottom: 0.2em;
-}
-
-.images {
-  margin-top: 50px;
-  width: 100%;
-}
-
 .top-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -262,48 +191,7 @@ footer {
   justify-items: center;
 }
 
-#black-area-textil {
-  display: flex;
-  margin: -180px 0px 0px;
-  justify-content: center;
-  height: 500px;
-  background-color: #1d1d1b;
-}
-
-
-.white-text {
-  position: absolute;
-  font-size: 12px;
-  margin: 20px;
-  color: white;
-  text-align: center;
-  margin-top: 50px;
-  font-weight: light;
-}
-
-.underrubrik-vit {
-  margin-top: 20px;
-  position: absolute;
-  width: 400px;
-  font-size: 9px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-}
-
-.småbilder {
-  max-width: 80%;
-  margin: 20px 40px 20px;
-}
-
-.gallery-item {
-  margin-bottom: 40px;
-}
-
-.gallery-item p {
-  margin-top: -30px;
-  margin-left: 40px;
-}
+/* responsive */
 
 @media (max-width: 1000px) {
   .hamburger {
@@ -345,4 +233,3 @@ footer {
     display: none;
   }
 }
-
