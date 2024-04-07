@@ -64,6 +64,10 @@ footer {
     font-size: 1rem;
     width: 80%;
   }
+
+  .namn {
+    margin-left: 40px;
+  }
 }
 
 @media (max-width: 500px) {
